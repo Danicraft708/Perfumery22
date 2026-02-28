@@ -24,7 +24,7 @@ const db = getFirestore(firebaseApp);
 const DATA_DOC = doc(db, "inventario", "main");
 
 const PERFUMERY_COMPANY_ID = 'c001';
-const WHATSAPP_NUMBER = '573001234567';
+const WHATSAPP_NUMBER = '573224776053';
 const ADMIN_PASSWORD = 'perfumery2025';
 
 const FONTS = `@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap');`;
@@ -428,7 +428,7 @@ function imprimirRecibo({ product, qty, nota, total, folio, fecha, hora, clientN
   <div class="footer">
     <div class="thanks">¡Gracias por tu compra!</div>
     <p>Válido como comprobante de pago.</p>
-    <p>📱 WhatsApp: +57 300 123 4567</p>
+    <p>📱 WhatsApp: +57 322 477 6053</p>
     <div class="barcode">||||| ${folio} ||||| ${Date.now()} |||||</div>
     <div class="firebase-badge">🔗 Sincronizado con InvManager via Firebase</div>
   </div>
@@ -634,7 +634,7 @@ function ReciboModal({ receipt, onClose }) {
           <div style={{textAlign:'center',margin:'0.6rem 0'}}><span style={{display:'inline-block',border:'2.5px solid #16a34a',borderRadius:'6px',padding:'0.28rem 1.4rem',color:'#16a34a',fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:'1.25rem',fontWeight:700,letterSpacing:'0.2em',transform:'rotate(-3deg)',opacity:0.85}}>✓ PAGADO</span></div>
           <div style={{textAlign:'center',borderTop:'2px dashed rgba(184,137,42,0.3)',paddingTop:'0.8rem',marginTop:'0.65rem'}}>
             <p style={{fontFamily:"'Cormorant Garamond',Georgia,serif",fontSize:'0.95rem',color:T.gold,margin:'0 0 0.2rem'}}>¡Gracias por tu compra!</p>
-            <p style={{fontSize:'0.65rem',color:'#7a6a55',lineHeight:1.5,margin:0}}>📱 WhatsApp: +57 300 123 4567</p>
+            <p style={{fontSize:'0.65rem',color:'#7a6a55',lineHeight:1.5,margin:0}}>📱 WhatsApp: +57 322 477 6053</p>
             <p style={{fontFamily:'monospace',fontSize:'0.48rem',color:'#c5b49a',marginTop:'0.35rem'}}>||||| {folio} ||||| {Date.now().toString().slice(-8)} |||||</p>
             <p style={{fontSize:'0.52rem',color:'rgba(99,102,241,0.5)',marginTop:'0.25rem'}}>🔗 Recibo guardado en InvManager via Firebase</p>
           </div>
